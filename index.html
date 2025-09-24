@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    html{
+      font-size: 62.5%;
+    }
+    body{
+      margin: 0;
+      padding: 0;
+      display: block;
+      align-content: center;
+      justify-items: center;
+      width: 96%;
+      background: rgb(222, 222, 222);
+    }
+    .container{
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(2,1fr);
+      gap: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    @media (min-width:100px) and (max-width:350px){
+        html{
+          font-size: 20%;
+        }
+        .container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .box{
+          height: 30rem;
+          width: 50rem;
+        }
+      }
+      @media (min-width:351px) and (max-width:550px){
+        html{
+          font-size: 30%;
+        }
+      }
+      @media (min-width:551px) and (max-width:900px){
+        html{
+          font-size: 40%;
+        }
+      }
+    .box{
+      background: lightblue;
+      border-radius: 1rem;
+      padding: 1rem 2rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .b1{
+      grid-column: 1/3;
+      background: rgb(160, 16, 255);
+      color: white;
+      position: relative;
+    }
+    .bg-img{
+      width: 11rem;
+      position: absolute;
+      right: 7rem;
+      top: 1rem;
+    }
+    .profile{
+      display: grid;
+      grid-template-columns: 5rem 1fr;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .profile-names{
+      margin-left: 1rem;
+    }
+    .img{
+      border-radius: 5rem;
+      width: 4rem;
+    }
+    .profile-name{
+      margin: 0;
+      margin-top: 0.6rem;
+      font-size: 1.6rem;
+    }
+    .profile-verify{
+      margin-top: 0.6rem;
+      font-size: 1.4rem;
+      letter-spacing: 0.2rem;
+    }
+    .title{
+      line-height: 2.2rem;
+      font-size: 1.4rem;
+      z-index: 1;
+    }
+    .title-heading{
+      margin: 0;
+      margin-top: 1rem;
+    }
+    
+    .description-para{
+      line-height: 1.8rem;
+      font-weight: bold;
+      margin: 0;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: rgb(194, 194, 194);
+    }
+    .b2{
+      background : rgb(45, 45, 92);
+      color: white;
+    }
+    .b3{
+      grid-column: 4/5;
+      grid-row: 1/3;
+      background: white;
+      color: rgb(45, 45, 92);
+    }
+    .b4{
+      background: white;
+    }
+    .b5{
+      grid-column: 2/4;
+    }
+
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box b1">
+      <img src="./images/bg-pattern-quotation.svg" class="bg-img">
+      <div class="profile">
+        <div class="profile-img">
+          <img src="./images/image-daniel.jpg" class="img">
+        </div>
+        <div class="profile-names">
+          <h3 class="profile-name">Daniel Clifford</h3>
+          <p class="profile-verify">Verified Graduate</p>
+        </div>  
+      </div>
+
+      <div class="title">
+        <h2 class="title-heading">I received a job offer mid-course, and the subjects I learned were current, if not more so,in the company I joined. I honestly feel I got every penny’s worth.</h2>
+      </div>
+      <div class="description">
+        <p class="description-para">“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+      </div>
+    </div>
+
+    <div class="box b2">
+      <div class="profile">
+        <div class="profile-img">
+          <img src="./images/image-jonathan.jpg" class="img">
+        </div>
+        <div class="profile-names">
+          <h3 class="profile-name">Jonathan Walters</h3>
+          <p class="profile-verify">Verified Graduate</p>
+        </div>  
+      </div>
+
+      <div class="title">
+        <h2 class="title-heading">The team was very supportive and kept me motivated</h2>
+      </div>
+      <div class="description">
+        <p class="description-para">“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ”</p>
+      </div>
+    </div>
+
+    <div class="box b3">
+      <div class="profile">
+        <div class="profile-img">
+          <img src="./images/image-kira.jpg" class="img">
+        </div>
+        <div class="profile-names">
+          <h3 class="profile-name">Kira Whittle</h3>
+          <p class="profile-verify">Verified Graduate</p>
+        </div>  
+      </div>
+
+      <div class="title">
+        <h2 class="title-heading">Such a life-changing experience. Highly recommended!</h2>
+      </div>
+      <div class="description">
+        <p class="description-para">“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of my developent experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend! ”</p>
+      </div>
+    </div>
+
+    <div class="box b4">
+      <div class="profile">
+        <div class="profile-img">
+          <img src="./images/image-jeanette.jpg" class="img">
+        </div>
+        <div class="profile-names">
+          <h3 class="profile-name">Jeanette Harmon</h3>
+          <p class="profile-verify">Verified Graduate</p>
+        </div>  
+      </div>
+
+      <div class="title">
+        <h2 class="title-heading" style="color: rgb(46, 46, 88);">An overall wonderful and rewarding experience</h2>
+      </div>
+      <div class="description">
+        <p class="description-para" style="color: rgb(108, 107, 107);">“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”</p>
+      </div>
+    </div>
+
+    <div class="box b5">
+      <div class="profile">
+        <div class="profile-img">
+          <img src="./images/image-patrick.jpg" class="img">
+        </div>
+        <div class="profile-names">
+          <h3 class="profile-name"> Patrick Abrams</h3>
+          <p class="profile-verify">Verified Graduate</p>
+        </div>  
+      </div>
+
+      <div class="title">
+        <h2 class="title-heading" style="color: rgb(46, 46, 88);">Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.</h2>
+      </div>
+      <div class="description">
+        <p class="description-para" style="color: rgb(108, 107, 107);">“ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people. ”</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mohammed Yusuf</a>.
+  </div>
+</body>
+</html>
